@@ -13,7 +13,7 @@ case "$select" in
   amp|AMP ) grep -i '<DeviceType>AMP</DeviceType>' *.txt >> listofTV 2>error;;
   tuner|TUNER ) grep -i '<DeviceType>TUNER</DeviceType>' *.txt >> listofTV 2>error;;
   dvd|DVD ) grep -i '<DeviceType>DVD</DeviceType>' *.txt >> listofTV 2>error;;
-  *) clear ; echo "NOT POSSIBLE or email to Romain rgros@uei.com, Bye for now .:." ; exit 1 ;;
+  *) clear ; echo "NOT POSSIBLE or email to Romain xxx@uei.com, Bye for now .:." ; exit 1 ;;
 esac
 
 clear
@@ -32,7 +32,7 @@ echo -e "You choosed to filter all '<DeviceType>\033[1;33m$select\033[0m</Device
 
 echo "Please remember : "
 echo 
-echo -e "1 : You need to put \033[1;31m \"rxg_filter.sh\" \033[0m in the same directory as the files you want to filter !"
+echo -e "1 : You need to put \033[1;31m \"rxg_filter.sh\" \033[0m in the same directory as the files you want to be filtered !"
 echo 
 echo "2 : The Filtered Results will be stored in the directory named \"rxg_filter_results\"." 
 echo
@@ -42,7 +42,7 @@ echo -e "4 : \033[41mFILES NAMES YOU WANT TO BE FILTERED SHOULD BE NAMED WITHOUT
 echo  
 echo -e "5 : If the Program freeze you may have the problem mentioned above (Step 4),\n therefore do \033[1;31m ctr + C \033[0m to kill \033[1;31m \"rxg_filter.sh\" \033[0m \n To solve this issue please check the name of the last file in \"rxg_filter_results\" and correct the mistake. "
 echo
-echo -e  "Any Question ? email Romain at \033[1;32m rgros@uei.com\033[0m or \033[1;32m xtechcode@gmail.com\033[0m "
+echo -e  "Any Question ? email Romain at \033[1;32m xxx@uei.com\033[0m or \033[1;32m xxx@gmail.com\033[0m "
 echo 
 echo -e  "Now please press \033[33m\033[5mEnter\033[0m\033[0m and Enjoy a coffee while the script is doing its job  :-P "
 echo "-------------------------------------------------------------------------------------------------------------- "
@@ -93,7 +93,7 @@ var5=------------------------------
 var6=------------------------------------- 
 var7=-----------------------------------------------
 var8=----------------------------------------------------------
-var9= echo -e  "------------------\033[31mONE FOR ALL\033[0m\033[33m\033[5m Romain Gros \033[0m\033[0m\033[1mrgros@uei.com\033[0m------------------  "
+var9= echo -e  "------------------\033[31mONE FOR ALL\033[0m\033[33m\033[5m Romain Gros \033[0m\033[0m\033[1mxxx@uei.com\033[0m------------------  "
 	 
 	 for search in $var1 $var2 $var3 $var4 $var5 $var6 $var7 $var8 $var9 $var8  $var7 $var6 $var5 $var4 $var3 $var2
  	  do
@@ -128,7 +128,7 @@ echo ""
 echo ""
 echo ""
 echo "-------------------------------------------------------------------------------------------------------------- "
-echo -e  "Any Question ? email Romain at \033[1;32m rgros@uei.com\033[0m or \033[1;32m xtechcode@gmail.com\033[0m "
+echo -e  "Any Question ? email Romain at \033[1;32m xxx@uei.com\033[0m or \033[1;32m xxx@gmail.com\033[0m "
 echo "-------------------------------------------------------------------------------------------------------------- "
 echo "   \\         __------~~-,"
 echo "    \\      ,'            ,"
