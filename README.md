@@ -1,8 +1,9 @@
 # bash_script_filter_tag
 
-Because a friend/colleague from my work asked me this (instead to do it manually) ... 
+Because a friend/colleague from my work asked me if it was possible to make a script (instead to do it manually) ...
+And because I am 21st Century Schizoid Man  ;) 
 
-This bash_script is to filter (xml)files by the presence of tag '<DeviceType>' with value as :
+This bash_script is to filter (xml)files by the presence of tag (DeviceType) with value as :
 
 <DeviceType>SAT</DeviceType>
 <DeviceType>TV</DeviceType>
