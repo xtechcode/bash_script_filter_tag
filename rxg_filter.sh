@@ -8,16 +8,16 @@ mkdir rxg_filter_results 2>error
 
 read -p "Which DeviceType Do you want to filter ? TV SAT DVD AMP etc ? " select 
 case "$select" in 
-  sat|SAT ) grep -i '<DeviceType>SAT</DeviceType>' *.txt >> listofTV 2>error;; 
-  tv|TV ) grep -i '<DeviceType>TV</DeviceType>' *.txt >> listofTV 2>error;;
-  amp|AMP ) grep -i '<DeviceType>AMP</DeviceType>' *.txt >> listofTV 2>error;;
-  tuner|TUNER ) grep -i '<DeviceType>TUNER</DeviceType>' *.txt >> listofTV 2>error;;
-  dvd|DVD ) grep -i '<DeviceType>DVD</DeviceType>' *.txt >> listofTV 2>error;;
+  sat|SAT ) grep -i '<DeviceType>SAT</DeviceType>' *.xml >> listofTV 2>error;; 
+  tv|TV ) grep -i '<DeviceType>TV</DeviceType>' *.xml >> listofTV 2>error;;
+  amp|AMP ) grep -i '<DeviceType>AMP</DeviceType>' *.xml >> listofTV 2>error;;
+  tuner|TUNER ) grep -i '<DeviceType>TUNER</DeviceType>' *.xml >> listofTV 2>error;;
+  dvd|DVD ) grep -i '<DeviceType>DVD</DeviceType>' *.xml >> listofTV 2>error;;
   *) clear ; echo "NOT POSSIBLE or email to Romain xxx@uei.com, Bye for now .:." ; exit 1 ;;
 esac
 
 clear
-#grep -i '<DeviceType>TV</DeviceType>' *.txt >> listofTV 2>/dev/null
+#grep -i '<DeviceType>TV</DeviceType>' *.xml >> listofTV 2>/dev/null
 cut -d ':' -f1 listofTV > listofTV2
 
 echo ""
@@ -26,9 +26,9 @@ total_result=`ls rxg_filter_results | wc -l`
 echo "-------------------------------------------------------------------------------------------------------------- "
 echo "Welcome to rxg_filter!!"
 echo
-# echo "You choosed to filter all '<DeviceType>$select</DeviceType>' from all the .txt files in this directory."
+# echo "You choosed to filter all '<DeviceType>$select</DeviceType>' from all the .xml files in this directory."
 echo
-echo -e "You choosed to filter all '<DeviceType>\033[1;33m$select\033[0m</DeviceType>' from all the .txt files in this directory. "
+echo -e "You choosed to filter all '<DeviceType>\033[1;33m$select\033[0m</DeviceType>' from all the .xml files in this directory. "
 
 echo "Please remember : "
 echo 
@@ -94,14 +94,14 @@ var6=-------------------------------------
 var7=-----------------------------------------------
 var8=----------------------------------------------------------
 var9= echo -e  "------------------\033[31mONE FOR ALL\033[0m\033[33m\033[5m Romain Gros \033[0m\033[0m\033[1mxxx@uei.com\033[0m------------------  "
-	 
-	 for search in $var1 $var2 $var3 $var4 $var5 $var6 $var7 $var8 $var9 $var8  $var7 $var6 $var5 $var4 $var3 $var2
- 	  do
-	    echo    $search  ! 	
-		for lol in col
-	           do
-	            for mm in lol
-				do
+   
+   for search in $var1 $var2 $var3 $var4 $var5 $var6 $var7 $var8 $var9 $var8  $var7 $var6 $var5 $var4 $var3 $var2
+    do
+      echo    $search  !  
+    for lol in col
+             do
+              for mm in lol
+        do
 sleep 0.001
                         done
                  done
