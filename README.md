@@ -1,6 +1,6 @@
 # bash_script_filter_tag
 
-Because a friend/colleague from my work asked me if it was possible to make a script (instead to do it manually).
+Because a friend/colleague from work asked me if it was possible to make a script (instead to do it manually).
 
 And because I am a 21st Century Schizoid Man  ;) 
 
